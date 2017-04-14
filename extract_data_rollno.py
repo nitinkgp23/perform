@@ -52,12 +52,14 @@ def rollno_dataextract(rollno):
         for sub in sem_list[sem]:
             credit += int(sub['Credit'])
             sub['Grade'] = _grade_to_marks(sub['Grade'])
-            if sub['Grade'] == 0:
+            if sub['Grade'] == 0 :
                 return None, None
             sg_contr += int(sub['Credit']) * sub['Grade']
             key_to_remove = ['L-T-P', 'Subject Name', 'Subject Type']
             for key in key_to_remove:
                 del sub[key]
+        if (credit == 0):
+            return None, None
         sem_list[sem].append({'Credit': credit, 'SGPA': round(sg_contr/credit, 2)})
 
     sem_list.reverse()
