@@ -15,7 +15,7 @@ def rollno_dataextract(rollno):
     
     tables = soup.find_all('td', width='60%') 
     sem_list=[]      
-    for table in tables[1:]:
+    for table in tables[0:]:
         subject_group=[]
         headings = [th.get_text() for th in table.find("tr").find_all("th")]
         for row in table.find_all("tr")[1:]:
@@ -24,7 +24,9 @@ def rollno_dataextract(rollno):
                 text.append(td.get_text())
                 subject_data_dict = dict(zip(headings,text))
             subject_group.append(subject_data_dict)
-        sem_list.append(subject_group)
+        if(subject_group):
+            if(subject_group[0]['Grade']):
+                sem_list.append(subject_group)
     if(not sem_list):
         return None, None
 
