@@ -29,7 +29,6 @@ def data_to_csv_sgpa(data, filename):
 	data: List of list of list of dict
 	      `data` contains sem_lists of all the students
 	'''
-	filename = 'dfdf.csv'
 	f=open(filename,'w')
 	for student in data:
 		for sgpa in student:
