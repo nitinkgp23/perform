@@ -67,6 +67,7 @@ def rollno_dataextract(rollno):
     sem_list.reverse()
     if(sem_list[0][-1]['Credit']!=23):
         sem_list[0], sem_list[1] = sem_list[1], sem_list[0]
+        sgpa[0], sgpa[1] = sgpa[1], sgpa[0]
 
     return sem_list, sgpa
 
