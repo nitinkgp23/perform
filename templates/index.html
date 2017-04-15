@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Performance Predictor</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="{{ url_for('static', filename='css/grayscale.min.css') }}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+.content-section {
+    padding-top: 5%;
+     padding-bottom: 5%;
+}
+.container {
+    width: inherit;
+}
+.btn-success {
+    color: black;
+    background-color: white;
+    border-color: mediumaquamarine;
+}
+    </style>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Performance</span> Predictor
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Model</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#download">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1><span class="light">Performance</span> Predictor</h1>
+                        <p class="intro-text">An implementation of soft computing tools.
+                            <br>A great app to help students for evaluating their performance.</p>
+                        <a href="#contact" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+
+    <!-- Download Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Ready for the demo?</h2>
+                <p>We have carried out a rigorous systematic review to attain the proposed objective. This includes identification of the gaps in the prediction methods, realising the parameters affecting any student’s performance and finally taking into account the existing prediction methods of students performance.
+                </p>
+               <style>
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.reveal-if-active label {
+  display: block;
+  margin: 0 0 3px 0;
+}
+.reveal-if-active input[type=text] {
+  width: 100%;
+}
+input[type="radio"]:checked ~ .reveal-if-active, input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px;
+  padding: 10px 20px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow: visible;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+form > div {
+  margin: 0 0 20px 0;
+}
+form > div label {
+  font-weight: bold;
+}
+form > div > div {
+  padding: 5px;
+}
+form > h4 {
+  color: mediumaquamarine;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  border-bottom: 2px solid mediumaquamarine;
+}
+
+body {
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+select{
+    background-color: white;
+    color: black;
+}
+input {
+
+    background-color: white;
+        color: black;
+        font-size: 24px;
+}
+label{
+    font-size: 26px;
+}
+.reveal-if-active label {
+    display: block;
+    font-size: 24px;
+    margin: 0 0 3px 0;
+}
+</style>
+<body>
+<script type="text/javascript">
+var FormStuff = {
+
+  init: function() {
+    this.applyConditionalRequired();
+    this.bindUIActions();
+  },
+
+  bindUIActions: function() {
+    $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
+  },
+
+  applyConditionalRequired: function() {
+
+    $(".require-if-active").each(function() {
+      var el = $(this);
+      if ($(el.data("require-pair")).is(":checked")) {
+        el.prop("required", true);
+      } else {
+        el.prop("required", false);
+      }
+    });
+
+  }
+
+};
+
+FormStuff.init();
+</script>
+<form method="POST" action="/">
+
+  <h4>Choose one</h4>
+  <div>
+    <div>
+      <input type="radio" name="choice-one" id="choice-one-rollno" required>
+      <label for="choice-one-rollno">Want to give Roll No. ?</label>
+
+      <div class="reveal-if-active">
+        <label for="which-rollno">Good call. What's your roll no.?</label>
+        <input type="text" id="which-rollno" name="which-rollno" class="require-if-active" data-require-pair="#choice-one-rollno">
+      </div>
+    </div>
+
+    <div>
+      <input type="radio" name="choice-one" id="choice-one-sgpa">
+      <label for="choice-one-sgpa">Want to enter SGPA?</label>
+
+      <div class="reveal-if-active">
+         <label for="which-sgpa">Great. Enter minimum 3! </label>
+        <input type="text" id="which-sgpa" name="which-sgpa" class="require-if-active" data-require-pair="#choice-one-sgpa">
+      </div>
+    </div>
+  </div>
+
+  <h4>Choose a department</h4>
+  <div><br>
+   <select id="sel1" name="dep" >
+            <option>Mathematics and Computing</option>
+            <option>Computer Science</option>
+            <option>Electronics and Communication Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Electrical Engineering</option>
+   </select>
+
+  </div>
+<br>
+  <div>
+    <input type="submit" value="Submit" class="btn btn-success">
+  </div>
+
+</form>
+            </div>
+        </div>
+    </section>
+     <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2"><h1><u>Team Members</u></h1>
+                   <div class="row">
+                     <div class="col-lg-1"></div>  <div class="col-lg-2"><h3>Kalpit</h3></div><div class="col-lg-2"><h3>Nitin</h3></div> <div class="col-lg-2"><h3>Naman</h3></div><div class="col-lg-2"><h3>Kaustubh</h3></div><div class="col-lg-2"> <h3>Sushovan</h3></div></div><br>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+
+
+                <h2>About Performance Predictor</h2>
+                <p><a href="http://iitkgp.ac.in/">IIT Kharagpur</a> is one of the premier technical institutes in India. It is recognized worldwide with many distinguished alumni around the globe. Many efforts have been put by the administratives of IIT so as to improve the global rankings. IIT Kharagpur being the torchbearer of all IITs, should take the initiative of improving its quality through the strategic program of enhancing the performance of the student community. This served as an inspiration to our team and thus we went on to create a simple and efficient tool of performance predictor for our project.</p>
+                <p>There can be several approaches to this problem and we made use of data mining. We use Educational Data Mining (EDM) technique to predict the CGPA and/or SGPA of students of various years. In this project, we have discussed in detail about models such as <a href="#">Support Vector Machines(SVM), kNN(k nearest neighbors), Random forest regression and Neural Networks,</a>which have been applied to predict results. </p>
+                <p>Our model is currently for IIT Kharagpur but it can be extended to other institutes as well. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Map Section -->
+
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{{ url_for('static', filename='js/grayscale.min.js')}}"></script>
+
+</body>
+
+</html>
